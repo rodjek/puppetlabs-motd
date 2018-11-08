@@ -23,6 +23,7 @@ matrix:
     -
       bundler_args: 
       dist: trusty
+      env: PLATFORM=ubuntu:14.04
       rvm: 2.5.0
       script: 
       - bundle exec rake 'waffle:provision[docker, ubuntu:14.04]'
@@ -34,6 +35,7 @@ matrix:
     -
       bundler_args: 
       dist: trusty
+      env: PLATFORM=centos:6
       rvm: 2.5.0
       script: 
       - bundle exec rake 'waffle:provision[docker, centos:6]'
